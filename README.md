@@ -38,7 +38,11 @@ Assigns all properties of the source object to the target object.
 
 <br>
 
-Returns the target object. If the **_source_** object is not provided the **_target_** object is returned unchanged.
+Returns the target object.
+
+If the **_target_** object is not provided and empty object is returned.
+
+If the **_source_** object is not provided the **_target_** object is returned unchanged.
 
 <br>
  
