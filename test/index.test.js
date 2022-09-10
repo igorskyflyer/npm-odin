@@ -12,11 +12,6 @@ describe('🧪 Odin tests 🧪', () => {
   })
 
   it('#3 should return true', () => {
-    // @ts-ignore
-    chai.isNull(odin())
-  })
-
-  it('#4 should return true', () => {
     chai.deepEqual(odin({ a: 1, b: 2 }, { c: 3 }), { a: 1, b: 2, c: 3 })
   })
 })
