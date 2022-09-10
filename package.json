@@ -1,7 +1,7 @@
 {
-	"name": "@igor.dvlpr/$1",
+	"name": "@igor.dvlpr/odin",
 	"version": "1.0.0",
-	"description": "$2",
+	"description": "🔱 Odin is an Object wrapper that allows you to create objects and set their attributes - all at once! 🔺",
 	"sideEffects": false,
 	"engines": {
 		"node": ">=12.17"
@@ -18,18 +18,23 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/igorskyflyer/$3.git"
+		"url": "git+https://github.com/igorskyflyer/npm-odin.git"
 	},
 	"keywords": [
+		"object",
+		"shallow",
+		"copy",
+		"clone",
+		"odin",
 		"igorskyflyer",
 		"igor.dvlpr"
 	],
 	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/igorskyflyer/$3/issues"
+		"url": "https://github.com/igorskyflyer/npm-odin/issues"
 	},
-	"homepage": "https://github.com/igorskyflyer/$3#readme",
+	"homepage": "https://github.com/igorskyflyer/npm-odin#readme",
 	"devDependencies": {
 		"@types/chai": "^4.3.1",
 		"@types/mocha": "^9.1.1",
