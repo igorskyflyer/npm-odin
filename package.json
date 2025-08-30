@@ -1,47 +1,62 @@
 {
-	"name": "@igor.dvlpr/odin",
-	"version": "1.0.0",
-	"description": "🔱 Odin is an Object wrapper that allows you to create objects and set their attributes - all at once! 🔺",
-	"sideEffects": false,
-	"engines": {
-		"node": ">=12.17"
-	},
-	"types": "./dist/index.d.ts",
-	"main": "./src/index.js",
-	"files": [
-		"src",
-		"dist"
-	],
-	"scripts": {
-		"test": "mocha",
-		"pub": "npm test && tsc && npm publish --access public"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/igorskyflyer/npm-odin.git"
-	},
-	"keywords": [
-		"object",
-		"shallow",
-		"copy",
-		"clone",
-		"odin",
-		"igorskyflyer",
-		"igor.dvlpr"
-	],
-	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/igorskyflyer/npm-odin/issues"
-	},
-	"homepage": "https://github.com/igorskyflyer/npm-odin#readme",
-	"devDependencies": {
-		"@types/chai": "^4.3.1",
-		"@types/mocha": "^9.1.1",
-		"@types/node": "^12.17.0",
-		"chai": "^4.3.6",
-		"mocha": "^10.0.0",
-		"typescript": "^4.7.4"
-	},
-	"dependencies": {}
+    "name": "@igorskyflyer/odin",
+    "version": "2.0.0",
+    "description": "🔱 Odin is an Object wrapper that allows you to create objects and set their attributes - all at once! 🔺",
+    "sideEffects": false,
+    "engines": {
+        "node": ">=22.0"
+    },
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest --run",
+        "pub": "pnpm test && git push origin main --tags"
+    },
+    "keywords": [
+        "object-assign",
+        "object-merge",
+        "merge-objects",
+        "shallow-copy",
+        "shallow-merge",
+        "object-utils",
+        "typescript",
+        "javascript",
+        "object-helper",
+        "property-assign",
+        "object-clone",
+        "object-manipulation",
+        "object-extend",
+        "merge-helper",
+        "object-update",
+        "igor dimitrijević",
+        "igorskyflyer"
+    ],
+    "license": "MIT",
+    "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
+    "funding": "https://ko-fi.com/igorskyflyer",
+    "homepage": "https://github.com/igorskyflyer/npm-odin",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/igorskyflyer/npm-odin.git"
+    },
+    "bugs": {
+        "url": "https://github.com/igorskyflyer/npm-odin/issues"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.2",
+        "@igorskyflyer/biome-config": "^2.1.0",
+        "@types/node": "^22.18.0",
+        "typescript": "^5.9.2",
+        "vitest": "^3.2.4"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "packageManager": "pnpm@10.15.0"
 }
