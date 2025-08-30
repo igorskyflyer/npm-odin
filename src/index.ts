@@ -10,7 +10,7 @@
  *
  * If the **_source_** object is not provided the **_target_** object is returned unchanged.
  */
-function odin(target, source) {
+export function odin(target: object, source: object): object {
   if (typeof target !== 'object') {
     return {}
   }
@@ -21,5 +21,3 @@ function odin(target, source) {
 
   return Object.assign(target, source)
 }
-
-module.exports = { odin }
